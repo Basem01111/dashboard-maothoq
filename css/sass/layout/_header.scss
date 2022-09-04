@@ -8,25 +8,27 @@
     display: flex;
     cursor: pointer;
   }
-  .notice {
-    .badge-count {
-      position: absolute;
-      right: -11px;
-      top: -4px;
-      width: 18px;
-      height: 18px;
-    }
-    .dropdown-toggle {
-      position: relative;
-      svg {
-        font-size: 25px;
+  .list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .icon-nav {
+      &.notice {
+        .badge-count {
+          position: absolute;
+          right: -11px;
+          top: -4px;
+          width: 16px;
+          height: 16px;
+        }
+        .dropdown-toggle {
+          position: relative;
+          &::after {
+            display: none;
+          }
+        }
       }
-      &::after {
-        display: none;
-      }
+      font-size: 20px;
     }
-  }
-  .icon-nav {
-    font-size: 25px;
   }
 }

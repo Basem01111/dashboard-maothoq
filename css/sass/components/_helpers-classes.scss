@@ -12,3 +12,13 @@
   padding: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
+
+// Btns 
+.btn-green {
+  background-color:$green-color;
+  color: white;
+  &:hover {
+    color: white;
+    background-color:$green-color-hover;
+  }
+}

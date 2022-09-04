@@ -15,6 +15,15 @@
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+.btn-green {
+  background-color: #32A24C;
+  color: white;
+}
+.btn-green:hover {
+  color: white;
+  background-color: #309748;
+}
+
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -76,6 +85,16 @@ button {
 }
 .modal-header .btn-close {
   margin: unset !important;
+}
+
+.btn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 6px;
 }
 
 .app {
@@ -250,24 +269,30 @@ button {
   display: flex;
   cursor: pointer;
 }
-.main-navbar .notice .badge-count {
+.main-navbar .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.main-navbar .list-item .icon-nav {
+  font-size: 20px;
+}
+.main-navbar .list-item .icon-nav.notice .badge-count {
   position: absolute;
   right: -11px;
   top: -4px;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 }
-.main-navbar .notice .dropdown-toggle {
+.main-navbar .list-item .icon-nav.notice .dropdown-toggle {
   position: relative;
 }
-.main-navbar .notice .dropdown-toggle svg {
-  font-size: 25px;
-}
-.main-navbar .notice .dropdown-toggle::after {
+.main-navbar .list-item .icon-nav.notice .dropdown-toggle::after {
   display: none;
-}
-.main-navbar .icon-nav {
-  font-size: 25px;
 }
 
 body {
