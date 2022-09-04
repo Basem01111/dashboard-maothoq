@@ -11,7 +11,16 @@
   background-color: #fff;
   border-radius: 0.3rem;
   padding: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table-dark th {
+  background-color: #243848 !important;
+}
+
+.table,
+.table thead {
+  box-shadow: 0 0 5px 0 #ddd;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar {

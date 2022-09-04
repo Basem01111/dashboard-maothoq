@@ -1,0 +1,10 @@
+// tables
+.table-dark th {
+  background-color: $main-dark !important;
+}
+
+.table,
+.table thead {
+  box-shadow: 0 0 5px 0 #ddd;
+  border-radius: 5px;
+}
