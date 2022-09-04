@@ -56,9 +56,11 @@ button {
     margin: unset !important;
   }
 }
-// Edit btn Bootstrap
-.btn {
-  display: flex !important;
-    align-items: center;
-    gap: 6px;
+
+input[readonly] {
+  cursor: context-menu;
+  &:focus {
+    box-shadow: none !important;
+
+  }
 }
