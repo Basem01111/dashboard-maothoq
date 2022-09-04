@@ -11,3 +11,13 @@
   border-radius: 0.3rem;
   padding: 1rem;
 }
+
+// Btns 
+.btn-green {
+  background-color:$green-color;
+  color: white;
+  &:hover {
+    color: white;
+    background-color:$green-color-hover;
+  }
+}
