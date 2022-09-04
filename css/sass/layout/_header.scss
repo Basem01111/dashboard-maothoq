@@ -1,0 +1,32 @@
+.main-navbar {
+  padding: 10px 8px;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  .tog-nav {
+    font-size: 30px;
+    display: flex;
+    cursor: pointer;
+  }
+  .notice {
+    .badge-count {
+      position: absolute;
+      right: -11px;
+      top: -4px;
+      width: 18px;
+      height: 18px;
+    }
+    .dropdown-toggle {
+      position: relative;
+      svg {
+        font-size: 25px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .icon-nav {
+    font-size: 25px;
+  }
+}

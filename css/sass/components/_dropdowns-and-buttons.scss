@@ -1,0 +1,52 @@
+//buttons
+.btn-main-sm {
+  padding: 0.3rem 0.7rem;
+  transition: $transition;
+  color: #fff;
+  background: #243848;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-size: 13px;
+  outline: none;
+  border: 1px solid #243848;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+    transition: $transition;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+  }
+  &:hover {
+    color: #243848;
+    border: 1px solid #243848;
+    &::before {
+      left: 0;
+    }
+  }
+}
+
+// Badges
+.badge-count {
+  background-color: $light-blue;
+  font-size: 12px;
+  height: 18px;
+  min-width: 18px;
+  font-family: sans-serif;
+  border-radius: 5px;
+  color: white;
+display: flex;
+align-items: center;
+justify-content: center;}
