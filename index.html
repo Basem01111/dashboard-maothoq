@@ -30,7 +30,7 @@
         </div>
         <img src="./img/home-logo.png" alt="" class="logo" />
         <ul class="list">
-          <li class="list-item ">
+          <li class="list-item active">
             <a href="">
               <i class="fa-solid fa-desktop icon"></i>
               الواجهة
@@ -118,7 +118,7 @@
               </a>
             </li>
           </div>
-          <li class="list-item active">
+          <li class="list-item ">
             <a data-bs-toggle="collapse" href="#settings"  aria-expanded="false" >
               <i class="fa-solid fa-gear icon"></i>
               الاعدادات
@@ -126,7 +126,7 @@
             </a>
           </li>
           <div class="collapse item-collapse" id="settings">
-            <li class="list-item active">
+            <li class="list-item ">
               <a href="">
                 <i class="fa-solid fa-gears icon"></i>
                 اعدادات المنصة
@@ -255,15 +255,32 @@
               </div>
               <div class="list-item ">
                 <div class="btn btn-green">
-                  طلب جديد
+                  يوجد طلبات جديدة
                   <i class="fa-solid fa-bell  fa-shake"></i>
                 </div>
                 <a href="#" class="icon-nav">
                   <i class="fa-solid fa-language"></i>
                 </a>
-                <a href="#" class="icon-nav">
+                <div class="dropdown msg icon-nav">
+                  <div class="badge-count">0</div>
+                  <button
+                    class="dropdown-toggle icon-nav"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                   <i class="fa-regular fa-envelope"></i>
-                </a>
+
+                  </button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li><a class="dropdown-item" href="#"></a></li>
+                    <li></li>
+                  </ul>
+                </div>
                 <div class="dropdown notice icon-nav">
                   <div class="badge-count">0</div>
                   <button

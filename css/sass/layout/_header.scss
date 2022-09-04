@@ -15,17 +15,30 @@
     .icon-nav {
       &.notice {
         .badge-count {
-          position: absolute;
-          right: -11px;
-          top: -4px;
-          width: 16px;
-          height: 16px;
+          background-color: $light-blue;
         }
-        .dropdown-toggle {
-          position: relative;
-          &::after {
-            display: none;
-          }
+      }
+      &.msg {
+        .badge-count {
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+}
+      }
+      .badge-count {
+        position: absolute;
+        right: -8px;
+        top: -4px;
+        width: 18px;
+        z-index: 2;
+        height: 18px;
+      }
+      .dropdown-toggle {
+        position: relative;
+        &::after {
+          display: none;
         }
       }
       font-size: 20px;

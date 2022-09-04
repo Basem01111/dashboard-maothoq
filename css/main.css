@@ -291,16 +291,27 @@ button {
   font-size: 20px;
 }
 .main-navbar .list-item .icon-nav.notice .badge-count {
-  position: absolute;
-  right: -11px;
-  top: -4px;
-  width: 16px;
-  height: 16px;
+  background-color: #09AECE;
 }
-.main-navbar .list-item .icon-nav.notice .dropdown-toggle {
+.main-navbar .list-item .icon-nav.msg .badge-count {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.main-navbar .list-item .icon-nav .badge-count {
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  width: 18px;
+  z-index: 2;
+  height: 18px;
+}
+.main-navbar .list-item .icon-nav .dropdown-toggle {
   position: relative;
 }
-.main-navbar .list-item .icon-nav.notice .dropdown-toggle::after {
+.main-navbar .list-item .icon-nav .dropdown-toggle::after {
   display: none;
 }
 
@@ -398,7 +409,7 @@ button {
 }
 
 .badge-count {
-  background-color: #09AECE;
+  background-color: #FF1F1D;
   font-size: 12px;
   height: 18px;
   min-width: 18px;
