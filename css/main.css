@@ -11,8 +11,16 @@
   background-color: #fff;
   border-radius: 0.3rem;
   padding: 1rem;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.table-dark th {
+  background-color: #243848;
+}
+
+.table,
+.table thead {
+  box-shadow: 0 0 5px 0 #ddd;
+  border-radius: 5px;
 }
 
 .btn-green {
@@ -49,8 +57,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -100,27 +107,21 @@ button {
 .app {
   min-height: 100vh;
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .app .sidebar {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   background-color: #243848;
   width: 240px;
   position: fixed;
   overflow-y: auto;
   height: 100%;
   right: 0;
-  -webkit-transition: 300ms;
   transition: 300ms;
 }
 .app .sidebar::-webkit-scrollbar {
-  display: none;
-  /* Chrome, Safari and Opera */
+  display: none; /* Chrome, Safari and Opera */
 }
 @media (max-width: 991.98px) {
   .app .sidebar {
@@ -162,15 +163,10 @@ button {
   padding: 16px;
   height: 50px;
   display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
   gap: 5px;
-  -webkit-transition: 300ms;
   transition: 300ms;
   border-radius: 0 7px 7px 0;
 }
@@ -179,8 +175,7 @@ button {
 }
 .app .sidebar .list .list-item a:not(.active a):hover {
   cursor: pointer;
-  -webkit-box-shadow: 8px 12px 4px -12px #009080;
-          box-shadow: 8px 12px 4px -12px #009080;
+  box-shadow: 8px 12px 4px -12px #009080;
 }
 .app .sidebar .list .list-item a .badge-count {
   position: absolute;
@@ -235,7 +230,6 @@ button {
 .app .main-side {
   width: calc(100% - 240px);
   margin: 0 auto 0 0;
-  -webkit-transition: 300ms;
   transition: 300ms;
   overflow-y: auto;
 }
@@ -264,8 +258,6 @@ button {
 }
 .main-navbar .tog-nav {
   font-size: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   cursor: pointer;
 }
@@ -303,8 +295,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -343,19 +334,12 @@ button {
 
 .btn-main-sm {
   padding: 0.3rem 0.7rem;
-  -webkit-transition: 300ms;
   transition: 300ms;
   color: #fff;
   background: #243848;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   gap: 3px;
   white-space: nowrap;
   cursor: pointer;
@@ -374,7 +358,6 @@ button {
   left: 100%;
   top: 0;
   width: 100%;
-  -webkit-transition: 300ms;
   transition: 300ms;
   height: 100%;
   background-color: white;
@@ -396,32 +379,23 @@ button {
   font-family: sans-serif;
   border-radius: 5px;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-select {
   border-radius: 4px;
   padding: 0.2rem;
   font-size: 13px;
-  -webkit-transition: 300ms;
   transition: 300ms;
   border: 1px solid #ddd;
 }
 .main-select:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(43, 166, 112, 0.25) !important;
-          box-shadow: 0 0 0 0.25rem rgba(43, 166, 112, 0.25) !important;
+  box-shadow: 0 0 0 0.25rem rgba(43, 166, 112, 0.25) !important;
   outline: none;
 }
 
 .form-control:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(43, 166, 112, 0.25) !important;
-          box-shadow: 0 0 0 0.25rem rgba(43, 166, 112, 0.25) !important;
-}
+  box-shadow: 0 0 0 0.25rem rgba(43, 166, 112, 0.25) !important;
+}/*# sourceMappingURL=main.css.map */
