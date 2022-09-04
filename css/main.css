@@ -163,7 +163,10 @@ button {
 .app .sidebar .list {
   padding: 0;
   margin: 0;
-  margin-right: 12px;
+  margin-right: 7px;
+}
+.app .sidebar .list .list-item {
+  white-space: nowrap;
 }
 .app .sidebar .list .list-item a {
   color: white;
@@ -178,12 +181,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  gap: 5px;
+  gap: 7px;
   -webkit-transition: 300ms;
   transition: 300ms;
   border-radius: 0 7px 7px 0;
 }
 .app .sidebar .list .list-item a svg {
+  width: 22px;
   font-size: 20px;
 }
 .app .sidebar .list .list-item a:not(.active a):hover {
@@ -234,7 +238,8 @@ button {
   padding: 12px;
   height: unset !important;
 }
-.app .sidebar .list .item-collapse .list-item a svg, .app .sidebar .list .item-collapse .list-item a i {
+.app .sidebar .list .item-collapse .list-item a svg,
+.app .sidebar .list .item-collapse .list-item a i {
   font-size: 16px;
 }
 .app .sidebar .list .item-collapse .list-item a .badge-count {
@@ -255,15 +260,54 @@ button {
   }
 }
 .app.colse-and-open .sidebar {
-  right: -240px;
+  width: 57px;
 }
 @media (max-width: 991.98px) {
   .app.colse-and-open .sidebar {
+    width: 240px;
     right: 0;
   }
 }
+.app.colse-and-open .sidebar .list {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+.app.colse-and-open .sidebar .list .list-item {
+  overflow: hidden;
+}
+.app.colse-and-open .sidebar .list .list-item a {
+  gap: 16px;
+}
+.app.colse-and-open .sidebar .list .list-item a .badge-count {
+  display: none;
+}
+.app.colse-and-open .sidebar .logo {
+  opacity: 0;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+.app.colse-and-open .sidebar:hover {
+  width: 240px;
+}
+.app.colse-and-open .sidebar:hover .list .list-item {
+  overflow: unset;
+}
+.app.colse-and-open .sidebar:hover .list .list-item a {
+  gap: 7px;
+}
+.app.colse-and-open .sidebar:hover .list .list-item a .badge-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.app.colse-and-open .sidebar:hover .logo {
+  opacity: 1;
+}
 .app.colse-and-open .main-side {
-  width: 100%;
+  width: calc(100% - 50px);
 }
 
 .main-navbar {
@@ -314,6 +358,12 @@ button {
 }
 .main-navbar .list-item .icon-nav .dropdown-toggle::after {
   display: none;
+}
+@media (max-width: 767.98px) {
+  .main-navbar .list-item .btn {
+    font-size: 12px !important;
+    padding: 4px !important;
+  }
 }
 
 body {

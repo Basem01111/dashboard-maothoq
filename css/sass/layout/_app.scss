@@ -41,41 +41,44 @@
     .list {
       padding: 0;
       margin: 0;
-      margin-right: 12px;
-      .list-item a {
-        color: white;
-        width: 100%;
-        padding: 16px;
-        height: 50px;
-        display: block;
-        display: flex;
-        align-items: center;
-        position: relative;
-        gap: 5px;
-        transition: $transition;
-        border-radius: 0 7px 7px 0;
-        svg {
-          font-size: 20px;
+      margin-right: 7px;
+      .list-item {
+        white-space: nowrap;
+        a {
+          color: white;
+          width: 100%;
+          padding: 16px;
+          height: 50px;
+          display: block;
+          display: flex;
+          align-items: center;
+          position: relative;
+          gap: 7px;
+          transition: $transition;
+          border-radius: 0 7px 7px 0;
+          svg {
+            width: 22px;
+            font-size: 20px;
+          }
+          &:not(.active a):hover {
+            cursor: pointer;
+            box-shadow: 8px 12px 4px -12px $main-color;
+          }
+          .badge-count {
+            position: absolute;
+            background-color: $light-blue;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            min-width: 23px;
+            font-size: 13px;
+            height: 23px;
+          }
         }
-        &:not(.active a):hover {
-          cursor: pointer;
-          box-shadow: 8px 12px 4px -12px $main-color;
-        }
-        .badge-count {
-          position: absolute;
-          background-color: $light-blue;
-          top: 50%;
-          left: 12px;
-          transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          -moz-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          -o-transform: translateY(-50%);
-          min-width: 23px;
-          font-size: 13px;
-          height: 23px;
-
-}
       }
       .list-item.active a {
         color: $main-dark;
@@ -99,20 +102,20 @@
           -moz-border-radius: 10px;
           -ms-border-radius: 10px;
           -o-border-radius: 10px;
-}
+        }
         .list-item a {
           font-size: 13px;
           padding: 12px;
           height: unset !important;
-          svg,i {
+          svg,
+          i {
             font-size: 16px;
           }
           .badge-count {
             min-width: 20px;
             font-size: 12px;
             height: 20px;
-  
-  }
+          }
         }
       }
     }
@@ -127,12 +130,50 @@
     }
   }
   &.colse-and-open .sidebar {
-    right: -240px;
+    width: calc(50px + 7px);
     @include maxWidth(md) {
+      width: 240px;
       right: 0;
+    }
+    .list {
+      transition: $transition;
+      .list-item {
+        overflow: hidden;
+        a {
+          gap: 16px;
+          .badge-count {
+            display: none;
+          }
+        }
+      }
+    }
+    .logo{
+      opacity: 0;
+      transition: $transition;
+      -webkit-transition: $transition;
+      -moz-transition: $transition;
+      -ms-transition: $transition;
+      -o-transition: $transition;
+}
+    &:hover {
+      width: 240px;
+      .list {
+        .list-item {
+          overflow: unset;
+          a {
+            gap: 7px;
+            .badge-count {
+              display: flex;
+            }
+          }
+        }
+      }
+      .logo {
+        opacity: 1;
+      }
     }
   }
   &.colse-and-open .main-side {
-    width: 100%;
+    width: calc(100% - 50px);
   }
 }
