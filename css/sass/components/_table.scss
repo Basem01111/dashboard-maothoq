@@ -1,4 +1,9 @@
 // tables
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .table-dark th {
   background-color: #243848 ;
 }
