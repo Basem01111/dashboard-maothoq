@@ -22,6 +22,18 @@
   background-color: #309748;
 }
 
+.status_info {
+  padding: 8px 13px;
+  color: #fff;
+  background-color: #0dcaf0;
+  border-radius: 0.3rem;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .table-dark th {
   background-color: #243848;
 }
