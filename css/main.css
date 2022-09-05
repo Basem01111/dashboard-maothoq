@@ -487,6 +487,9 @@ button {
   color: #fff;
   background-color: #8e44ad;
 }
+.btn-purple:focus {
+  box-shadow: none;
+}
 .btn-purple:hover {
   background-color: #7b3399;
   color: #fff;

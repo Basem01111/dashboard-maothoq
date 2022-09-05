@@ -706,12 +706,19 @@
                         </td>
                         <td>2022-2-2</td>
                         <td>
-                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#refuse_reason">رفض</button>
+                          <button
+                            class="btn btn-sm btn-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#refuse_reason"
+                          >
+                            رفض
+                          </button>
                           <button class="btn btn-success btn-sm">موافق</button>
                         </td>
                         <td>
                           <div class="d-flex gap-2">
-                            <button class="btn btn-purple btn-sm">
+                            <button class="btn btn-purple btn-sm" data-bs-toggle="modal"
+                            data-bs-target="#show_image">
                               <i class="fa-solid fa-eye"></i>
                             </button>
                             <button class="btn btn-primary btn-sm">
@@ -727,24 +734,84 @@
                   </table>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="refuse_reason" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="refuse_reason"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">سبب الرفض</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-floating">
-                        <textarea class="form-control w-100" style="min-height: 100px" placeholder="Leave a comment here" id="effect_holder"></textarea>
-                        <label for="effect_holder" class="start-100 end-0 small-label">السبب</label>
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          سبب الرفض
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control w-100"
+                            style="min-height: 100px"
+                            placeholder="Leave a comment here"
+                            id="effect_holder"
+                          ></textarea>
+                          <label
+                            for="effect_holder"
+                            class="start-100 end-0 small-label"
+                            >السبب</label
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm"
+                          data-bs-dismiss="modal"
+                        >
+                          الغاء
+                        </button>
+                        <button type="button" class="btn btn-success btn-sm">
+                          ارسال
+                        </button>
                       </div>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">الغاء</button>
-                      <button type="button" class="btn btn-success btn-sm">ارسال</button>
-                    </div>
                   </div>
+                </div>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="show_image"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="image_holder w-100 h-100">
+                          <img
+                            src="https://www.wallpaperflare.com/static/667/705/181/steins-gate-okabe-rintarou-male-anime-wallpaper.jpg"
+                            alt="image"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -770,12 +837,22 @@
                         </td>
                         <td>2022-2-2</td>
                         <td>
-                          <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#refuse_reason1">رفض</button>
+                          <button
+                            class="btn btn-sm btn-danger"
+                            data-bs-toggle="modal"
+                            data-bs-target="#refuse_reason1"
+                          >
+                            رفض
+                          </button>
                           <button class="btn btn-success btn-sm">موافق</button>
                         </td>
                         <td>
                           <div class="d-flex gap-2">
-                            <button class="btn btn-purple btn-sm">
+                            <button
+                              class="btn btn-purple btn-sm"
+                              data-bs-toggle="modal"
+                              data-bs-target="#show_image1"
+                            >
                               <i class="fa-solid fa-eye"></i>
                             </button>
                             <button class="btn btn-primary btn-sm">
@@ -791,24 +868,84 @@
                   </table>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="refuse_reason1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div
+                  class="modal fade"
+                  id="refuse_reason1"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
                   <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">سبب الرفض</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-floating">
-                        <textarea class="form-control w-100" style="min-height: 100px" placeholder="Leave a comment here" id="effect_holder"></textarea>
-                        <label for="effect_holder" class="start-100 end-0 small-label">السبب</label>
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          سبب الرفض
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-floating">
+                          <textarea
+                            class="form-control w-100"
+                            style="min-height: 100px"
+                            placeholder="Leave a comment here"
+                            id="effect_holder"
+                          ></textarea>
+                          <label
+                            for="effect_holder"
+                            class="start-100 end-0 small-label"
+                            >السبب</label
+                          >
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger btn-sm"
+                          data-bs-dismiss="modal"
+                        >
+                          الغاء
+                        </button>
+                        <button type="button" class="btn btn-success btn-sm">
+                          ارسال
+                        </button>
                       </div>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">الغاء</button>
-                      <button type="button" class="btn btn-success btn-sm">ارسال</button>
-                    </div>
                   </div>
+                </div>
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="show_image1"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="image_holder w-100 h-100">
+                          <img
+                            src="https://www.wallpaperflare.com/static/667/705/181/steins-gate-okabe-rintarou-male-anime-wallpaper.jpg"
+                            alt="image"
+                            class="img-fluid"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

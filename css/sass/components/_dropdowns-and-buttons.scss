@@ -41,6 +41,9 @@
 .btn-purple {
   color: $white_color;
   background-color: #8e44ad;
+  &:focus {
+    box-shadow: none;
+  }
   &:hover {
     background-color: #7b3399;
     color: $white_color;
