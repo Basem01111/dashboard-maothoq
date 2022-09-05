@@ -52,3 +52,7 @@
 .rmv-arw-inp[type=number] {
   -moz-appearance: textfield;
 }
+
+.form-floating > label {
+  left: auto;
+}
