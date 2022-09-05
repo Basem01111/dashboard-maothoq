@@ -25,6 +25,30 @@
 .status_info {
   padding: 8px 13px;
   color: $white_color;
-  background-color: #0dcaf0;
+  background-color: $info-color;
   border-radius: 0.3rem;
+}
+.status_green{
+  padding: 8px 13px;
+  color: $white_color;
+  background-color: $green-color;
+  border-radius: 0.3rem;
+}
+.status_red{
+  padding: 8px 13px;
+  color: $white_color;
+  background-color: $red-color;
+  border-radius: 0.3rem;
+}
+
+//remove arrow input number
+/* Chrome, Safari, Edge, Opera */
+.rmv-arw-inp::-webkit-outer-spin-button,
+.rmv-arw-inp::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.rmv-arw-inp[type=number] {
+  -moz-appearance: textfield;
 }

@@ -51,11 +51,12 @@
 .badge-count {
   background-color: $red-color;
   font-size: 12px;
+  width: fit-content;
   height: 18px;
   min-width: 18px;
   font-family: sans-serif;
   border-radius: 5px;
   color: white;
-display: flex;
+display: inline-flex;
 align-items: center;
 justify-content: center;}
