@@ -492,6 +492,15 @@ button {
   color: #fff;
 }
 
+.ignoreBtn_bg {
+  background-color: #FF1F1D;
+  color: #fff;
+}
+.ignoreBtn_bg:hover {
+  color: #fff;
+  background-color: #da2624;
+}
+
 .badge-count {
   background-color: #FF1F1D;
   font-size: 12px;

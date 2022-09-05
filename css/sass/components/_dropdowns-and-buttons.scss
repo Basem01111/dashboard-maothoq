@@ -47,6 +47,15 @@
   }
 }
 
+.ignoreBtn_bg {
+  background-color: #FF1F1D;
+  color: $white_color;
+  &:hover {
+    color: $white_color;
+    background-color: #da2624;
+  }
+}
+
 // Badges
 .badge-count {
   background-color: $red-color;

@@ -396,9 +396,14 @@
               </ol>
             </nav>
             <div class="content_view">
-              <div class="status d-flex align-items-center gap-2 mb-3">
-                <div class="status_green">اعضاء مفعلين:5</div>
-                <div class="status_red">اعضاء غير مفعلين:0</div>
+              <div class="holder_data mb-3 d-flex align-items-center justify-content-between">
+                <div class="status d-flex align-items-center gap-2">
+                  <div class="status_green">اعضاء مفعلين:5</div>
+                  <div class="status_red">اعضاء غير مفعلين:0</div>
+                </div>
+                <div class="btn_holder">
+                  <button class="btn btn-primary">تعديل</button>
+                </div>
               </div>
               <div class="row row-gap-24">
                 <div class="col-sm-6 col-md-4 col-lg-3">
@@ -457,6 +462,28 @@
                   />
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
+                  <label for="" class="small-label">تاريخ الميلاد </label>
+                  <input
+                    type="text"
+                    readonly
+                    value="2001-09-4"
+                    name=""
+                    class="form-control"
+                    id=""
+                  />
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <label for="" class="small-label">نبذة </label>
+                  <input
+                    type="text"
+                    readonly
+                    value="مائة عام جودة"
+                    name=""
+                    class="form-control"
+                    id=""
+                  />
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
                   <label for="" class="small-label">البريد الالكتروني </label>
                   <input
                     type="text"
@@ -497,6 +524,14 @@
                     class="view-img-form d-block"
                   />
                 </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-center">
+                  <div class="check_holder mb-1 w-100">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label small-label" for="flexCheckDefault">
+                      مدن التغطية
+                    </label>
+                  </div>
+                </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <label for="" class="small-label"> الدولة </label>
                   <input
@@ -519,6 +554,25 @@
                     id=""
                   />
                 </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-end">
+                  <div class="check_holder mb-1">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label small-label" for="flexCheckDefault">
+                      الاقسام
+                    </label>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <label for="" class="small-label"> التخصص </label>
+                  <input
+                    type="text"
+                    readonly
+                    value="تطوير"
+                    name=""
+                    class="form-control"
+                    id=""
+                  />
+                </div>
               </div>
               <ul class="nav nav-tabs mt-4">
                 <li class="nav-item">
@@ -536,10 +590,13 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" class="nav-link"
-                  data-bs-toggle="tab"
-                  data-bs-target="#nav-records"
-                  type="button">
+                  <a
+                    class="nav-link"
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-records"
+                    type="button"
+                  >
                     <div class="badge-count">0</div>
                     السجلات التجارية
                     <i class="fa-regular fa-file-lines"></i>
@@ -628,10 +685,12 @@
                           </a>
                         </td>
                         <td>2022-2-2</td>
-                        <td><div class="btn btn-primary">موافق</div></td>
-                        <td >
+                        <td>
+                          <button class="btn  btn-sm ignoreBtn_bg">رفض</button>
+                          <button class="btn btn-primary btn-sm">موافق</button>
+                        </td>
+                        <td>
                           <div class="d-flex gap-2">
-
                             <button class="btn btn-purple btn-sm">
                               <i class="fa-solid fa-eye"></i>
                             </button>
@@ -666,10 +725,12 @@
                           </a>
                         </td>
                         <td>2022-2-2</td>
-                        <td><div class="btn btn-primary">موافق</div></td>
-                        <td >
+                        <td>
+                          <button class="btn  btn-sm ignoreBtn_bg">رفض</button>
+                          <button class="btn btn-primary btn-sm">موافق</button>
+                        </td>
+                        <td>
                           <div class="d-flex gap-2">
-
                             <button class="btn btn-purple btn-sm">
                               <i class="fa-solid fa-eye"></i>
                             </button>
