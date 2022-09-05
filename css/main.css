@@ -476,7 +476,7 @@ button {
 .login_page .login_content .login_image {
   border-radius: 0px 10px 10px 0px;
   height: 100%;
-  flex-basis: 65%;
+  flex-basis: 60%;
 }
 .login_page .login_content .login_image img {
   max-height: 100%;
