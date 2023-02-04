@@ -47,6 +47,10 @@ button {
   padding: 1.5rem 0;
   min-height: calc(100vh - 41.88px - 54.5px - 69px);
 }
+
+.section_content {
+  min-height: calc(100vh - 149px - 55px);
+}
 // Modal
 .modal-header {
   .modal-title {

@@ -1,10 +1,14 @@
 .main-navbar {
-  padding: 10px 8px;
-  margin-top: 15px;
-  background-color: #fff;
-  border-radius: 6px;
+  width: 100%;
+  z-index: 1111;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #3d3d3d;
+  padding: 10px 15px;
+  color: white;
   .tog-nav {
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     cursor: pointer;
   }
@@ -13,6 +17,8 @@
     align-items: center;
     gap: 1rem;
     .icon-nav {
+      color: #fff;
+      font-size: 16px;
       &.notice {
         .badge-count {
           background-color: $light-blue;
@@ -25,15 +31,15 @@
           -moz-border-radius: 50%;
           -ms-border-radius: 50%;
           -o-border-radius: 50%;
-}
+        }
       }
       .badge-count {
         position: absolute;
         right: -8px;
         top: -4px;
-        width: 18px;
         z-index: 2;
-        height: 18px;
+        width: 15px;
+        height: 15px;
       }
       .dropdown-toggle {
         position: relative;
@@ -41,13 +47,15 @@
           display: none;
         }
       }
-      font-size: 20px;
     }
     @include maxWidth(sm) {
       .btn {
         font-size: 12px !important;
-      padding: 4px !important;
+        padding: 4px !important;
       }
     }
   }
+}
+button.icon-nav {
+  font-size: 15px !important;
 }
